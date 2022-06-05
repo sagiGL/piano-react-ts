@@ -1,0 +1,37 @@
+.note {
+    transition: ease-in-out 0.3s all;
+    &.black-key {
+        background: #222;
+        z-index: 1;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 20px;
+        color: white;
+        border-radius:0 0 10px 10px ;
+        z-index: 10;
+        &:hover {
+            background: #333;
+        }
+        &:active {
+            background: #555;
+        }
+    }
+    
+    &.white-key {
+        background: #fff;
+        border: 1px solid #eee;
+        color: black;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 30px;
+
+        &:hover {
+            background: #eee;
+        }
+        &:active {
+            background: #aaa;
+        }
+    }
+}
